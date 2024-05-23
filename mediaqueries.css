@@ -194,8 +194,10 @@
   margin: 5px;
 }
 #rezultat-prikaz{
-  width: 345px;
-  margin-left: 0;
+          width: 385px;
+        margin-left: 0;
+        margin-right: 10px;
+        font-size: 1.9rem;
 }
 }
 
