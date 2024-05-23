@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Bodova</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="pocetna">
+    <nav id="desktop-nav">
+        <div class="logo" id="poctn">Kalkulator bodova za upis u srednju školu</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#pocetna">Početna</a></li>
+            <li><a href="#uputstvo">Uputstvo</a></li>
+          </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Kalkulator bodova za upis u srednju školu</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#pocetna" onclick="toggleMenu()">Početna</a></li>
+            <li><a href="#uputstvo" onclick="toggleMenu()">Uputstvo</a></li>
+          </div>
+        </div>
+      </nav>
+
+    <section id="about">
+        <div class="opis-box">
+            <p id="opis">Da li završavate osnovnu školu, i planirate da upisete srednju skolu koja vam se sviđa, ali ne znate kako izračunati bodove? Onda je ovo sajt za vas. Kliknite na opciju "Uputstvo" u meniju, kako biste naucili da se koristite kalkulatorom. Izvor odakle su korišćene informacije o smjerovima i potrebnim predmetima za upis mozete viditi <a href="https://sscpale.net/novosti-2/915-2023-2024" target="_blank">ovde</a>.</p>
+        </div>
+    </section>
+    <main id="experience">
+        <div class="dropdown-container">
+        <div class="dropdown">
+            <button class="dropbtn">Škola</button>
+            <div class="dropdown-content">
+                <a href="#link1" onclick="gimnazija()">Gimnazija</a>
+                <a href="#link2" onclick="elektrotehnicka()">Elektrotehnička</a>
+                <a href="#link3" onclick="poljoprivredna()">Poljoprivredna</a>
+                <a href="#link4" onclick="masinska()">Mašinska</a>
+                <a href="#link5" onclick="medicinska()">Medicinska</a>
+                <a href="#link6" onclick="gradjevinska()">Građevinska</a>
+                <a href="#link7" onclick="ekonomska()">Ugostiteljsko-Ekonomska</a>
+                <a href="#link7" onclick="muzicka()">Muzička</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" id="smjerbtn">Smjer</button>
+            <div class="dropdown-content" id="smjer-dropdown"></div>
+        </div>
+    </div>
+        <span class="inputsrednji">
+            <input type="text" placeholder="Srednji prosjek iz 6. razreda" id="sesti" required class="pri">
+            <input type="text" placeholder="Srednji prosjek iz 7. razreda" id="sedmi" required class="pri">
+            <input type="text" placeholder="Srednji prosjek iz 8. razreda" id="osmi" required class="pri">
+            <input type="text" placeholder="Srednji prosjek iz 9. razreda" id="deveti" required class="pri">
+        </span>
+        <div id="inputs-container"></div>
+        <div id="inputs-container-2"></div>
+        <input type="text" placeholder="Osvojeni broj bodova je:" id="rezultat-prikaz" readonly>
+        <button id="calculate-button" onclick="performCalculations()">Izračunaj</button>
+    </main>
+</div>
+
+<div id="uputstvo">
+    <div class="uputstvobox">
+        <h1 id="upt">UPUTSTVO</h1>
+    </div>  
+    <div class="uputstvotxt">
+        <h2 id="uputstvotxt">
+            Nakon što otvorite stranicu imaćete polja da unesete srednji prosjek koji ste imali na kraju vašeg šestog,sedmog,osmog i devetog razreda, tu unesite prosjeke pa zatim pritisnite na dugme "Škola",kada pritisnete to dugme izace vam vise opcija da birate između srednjih škola.Nakon što ste izabrali školu kliknite na dugme "Smjer" , pa izaberite smjer koji želite.Nakon što ste izabrali smjer stvoriće vam se 10 polja gdje trebate unjeti ocijene iz 5 predmeta potebnih za upis vašeg smjera, u prvih 5 polja unosite zaključne ocijene iz osmog, a u drugih 5 zaključne ocijene iz devetog razreda.Nakon što su sva polja popunjena pritisnite dugme "Izračunaj" i rezultat će vam se ispisati u polju gdje piše "Osvojeni broj bodova je:".
+        </h2>
+    </div>
+</div>
+<div class="kraj">
+    <div id="mb">
+        <h1>MADE BY</h1>
+        <div>
+            <h1>ALEKSEJ ĐUKIĆ</h1>
+        </div>
+    </div>
+</div>
+
+<footer style="background:linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%); padding: 20px 0; text-align: center; font-family: Arial, sans-serif;">
+    <div style="margin-bottom: 10px;">
+        <a href="#about" style="font-family: Freeman, sans-serif; color: #ffffff; font-weight: 400; font-size: 2rem; text-decoration: none; margin: 20px;">Početna</a>
+        <a href="#experience" style="font-family: Freeman, sans-serif; color: #ffffff; font-weight: 400; font-size: 2rem; text-decoration: none; margin: 20px;">Uputstvo</a>
+    </div>
+    <div style="margin-bottom: 10px;">
+        <a href="https://www.linkedin.com/in/aleksejdjukicdev/" style="margin: 0 15px; text-decoration: none; color: #333;">
+            <img src="images/icons8-linkedin-48.png" alt="LinkedIn" style="vertical-align: middle;">
+        </a>
+        <a href="https://www.instagram.com/aleksejdj_/" style="margin: 0 15px; text-decoration: none; color: #333;">
+            <img src="images/icons8-instagram-48.png" alt="Instagram" style="vertical-align: middle;">
+        </a>
+    </div>
+    <div style="font-family: Freeman, sans-serif; color: #ffffff; font-weight: 400; font-size: 1rem; text-decoration: none;">
+        &copy; 2024 Aleksej Djukic. All rights reserved.
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+
+</script>
+</body>
+</html>

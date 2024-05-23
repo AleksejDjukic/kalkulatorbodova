@@ -1,0 +1,202 @@
+ @media screen and (max-width:768px) {
+    #desktop-nav {
+        display: none;
+      }
+      #hamburger-nav {
+        display: flex;
+        border-bottom: 1px solid #161515;
+      }
+      .logo {
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.1rem;
+        width: 300px;
+      }
+      .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+      }
+      #uputstvotxt{
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+      }
+      #upt{
+        text-align: center;
+      }
+      .uputstvobox{
+        text-align: center;
+      }
+      .opis-box{
+        border: 1px solid #302d2d;
+        border: 1px solid #302d2d;
+        margin: 0 20px; 
+        padding: 30px;
+        box-sizing: border-box;
+        margin-top: 100px;
+      }
+      #opis{
+        height: auto;
+      }
+
+      #uputstvo {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        background-color: #FBCEB1;
+        padding: 20px; 
+        box-sizing: border-box; 
+    }
+    
+    #upt {
+        text-align: center;
+        font-family: "Freeman", sans-serif;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 3rem;
+        margin-top: 50px; 
+    }
+    
+    .uputstvobox {
+        margin: 0 auto; 
+        padding: 30px;
+        max-width: 800px; 
+        box-sizing: border-box;
+    }
+    
+    .uputstvotxt {
+        text-align: center;
+        font-family: "Freeman", sans-serif;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 1.5rem;
+        margin-top: 50px;
+        margin-left: auto; 
+        margin-right: auto; 
+        padding: 20px;
+        max-width: 800px; 
+        -webkit-text-stroke-width: 0.01px;
+        -webkit-text-stroke-color: rgb(59, 53, 53);
+        box-sizing: border-box;
+    }
+    #upt {
+      font-size: 2rem; 
+  }
+
+  .uputstvotxt {
+      font-size: 1.1rem; 
+      margin-top: 30px; 
+  }
+
+  .uputstvobox {
+      margin: 0 10px; 
+      padding: 20px; 
+  }   
+  #hamburgernav{
+    width: 100%;
+  }
+  #mb {
+    width: 100%;
+  }
+  #mb h1{
+    font-size: 7rem;
+    text-align: center;
+  }
+  #pocetna{
+    height: fit-content;
+  }
+  #smjerbtn{
+    width: fit-content;
+  }
+  .dropbtn{
+    width: fit-content;
+    height: fit-content;
+  }
+  .dropdown-container {
+    text-align: center;
+}
+#experience{
+  height: fit-content;
+}
+#sesti, #sedmi, #osmi, #deveti{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 200px;
+}
+#pocetna{
+  width:  390px;
+}
+#smjerbtn {
+  width: auto;
+  margin: 10px auto; 
+  display: block;
+}
+
+.dropbtn {
+  width: auto;
+  height: auto;
+  margin: 10px auto; 
+  display: block;
+}
+
+.dropdown-container {
+  text-align: center;
+}
+
+#experience {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#sesti, #sedmi, #osmi, #deveti {
+  width: 80%; 
+  margin: 5px 0; 
+}
+
+.inputsrednji {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-left: 0;
+}
+
+#calculate-button {
+  width: auto;
+  margin: 10px auto; 
+  display: block;
+}
+
+#inputs-container, #inputs-container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-left: 0;
+}
+
+#inputs-container > div, #inputs-container-2 > div {
+  width: 45%;
+  margin: 5px;
+}
+#rezultat-prikaz{
+  width: 345px;
+  margin-left: 0;
+}
+}
+
+  
